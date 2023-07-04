@@ -12,19 +12,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class User {
+public class Pet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String firstName;
-    private String lastName;
+    private int id;
+    private String petName;
+    private Float age;
     private String gender;
-    private Float height;
-    private Float weight;
-    private String contact;
-    private String state;
-    private String province;
-    private String city;
-    private int postcode;
+    private String category;
+
 }
